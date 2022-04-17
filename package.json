@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "migrate": "prisma migrate dev",
-    "generate": "prisma generate"
+    "generate": "prisma generate",
+    "deploy": "yarn build && gcloud app deploy --project"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.3",

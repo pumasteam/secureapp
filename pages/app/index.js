@@ -44,6 +44,24 @@ const Home = () => {
           </Card.Footer>
         </Card>
       </Link>
+      <Link href="/app/camera" passHref>
+        <Card as="a" hoverable clickable css={{ margin: "10px" }}>
+          <Card.Body css={{ p: 0 }}>
+            <Card.Image
+              objectFit="cover"
+              src="https://blog.bricogeek.com/img_cms/3438-detector-de-perros-con-yolov3-y-raspberry-pi.jpg"
+              width="100%"
+              height={240}
+              alt="Real time camera reports"
+            />
+          </Card.Body>
+          <Card.Footer justify="flex-start">
+            <Text h3 b>
+              Real time camera reports
+            </Text>
+          </Card.Footer>
+        </Card>
+      </Link>
     </>
   );
 };
